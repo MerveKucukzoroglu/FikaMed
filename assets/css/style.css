@@ -1,2 +1,17 @@
+/* Google-Font */
 @import url('https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat+Alternates&display=swap');
 
+/* Global Style */
+
+body {
+    background-color: white;
+    font-family: 'Merienda', cursive;
+    color: #783F2E;
+    text-align: center;
+}
+
+/* Logo */
+
+.logo {
+    padding:10px
+}
