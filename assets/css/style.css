@@ -15,3 +15,30 @@ body {
 .logo {
     padding:10px
 }
+
+/*submit button and input name area */
+.submit-button, .name {
+    background-color: white;
+    color: #783F2E;
+    padding: 5px;
+    margin: 10px;
+    border-color: #783F2E;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.submit-button:hover {
+    background-color: #783F2E;
+    color: white;
+    padding: 5px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+
+/*notice area */
+
+.notice {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #9F2851;
+    margin-top: 50px;
+}
