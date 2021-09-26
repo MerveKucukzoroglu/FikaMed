@@ -17,7 +17,7 @@ body {
 }
 
 /*submit button and input name area */
-.submit-button, .name {
+.submit-button, .user-name {
     background-color: white;
     color: #783F2E;
     padding: 5px;
