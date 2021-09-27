@@ -17,7 +17,7 @@ body {
 }
 
 /*submit button and input name area */
-#submit-button, #awesome-button, #terrible-button, #user-name {
+#submit-button, #awesome-button, #terrible-button, #done, #user-name {
     background-color: white;
     color: #783F2E;
     padding: 10px;
@@ -27,7 +27,7 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-#submit-button:hover, #awesome-button:hover, #terrible-button:hover {
+#submit-button:hover, #awesome-button:hover, #terrible-button:hover, #done:hover {
     background-color: #783F2E;
     color: white;
     padding: 10px;

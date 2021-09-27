@@ -1,4 +1,5 @@
 //Wait for the DOM to finish loading before running
+//Prepare the focus and enter key function for the user
 document.getElementById("user-name").value = "";
 document.getElementById("user-name").focus();
 
@@ -27,8 +28,10 @@ function runChat() {
   `<button id="awesome-button" onclick="awesome();">Awesome</button>
   <button id="terrible-button" onclick="terrible();">Terrible</button>
   `
-
+  
+  console.log("Changing funtion based on what the user clicks");
 }
+
 /**The initial of chat
  * user enter their name
  */
@@ -43,6 +46,27 @@ function checkSelectedButton() {
 }
 
 function awesome() {
+
+  console.log("You feel awesome!");
+  let feelAwesome = document.getElementById("text-area");
+  feelAwesome.innerHTML = `
+    <p>That's great! What makes you feel awesome?</p>
+    
+    <input type = "radio" name = "choice" id="school-work">
+    <label for="school-work" class="radio-input">School/Work</label>
+    
+    <input type = "radio" name = "choice" id="nature-hobbies">
+    <label for="nature-hobbies" class="radio-input">Nature/hobbies</label>
+    
+    <input type = "radio" name = "choice" id="family-friends">
+    <label for="family-friends" class="radio-input">Family/Friends</label>
+    
+    <input type = "radio" name = "choice" id="fikamed" checked>
+    <label for="fikamed" class="radio-input">FikaMed</label>
+    `
+    let done = document.getElementById("buttons-area");
+    done.innerHTML.remove;
+    done.innerHTML = `<button id="done" onclick="feedback();">Done</button>`
 
 }
 
@@ -71,6 +95,6 @@ function worthless() {
 }
 
 function feedback() {
-
+console.log("Feedback");
 }
 
