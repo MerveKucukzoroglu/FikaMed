@@ -5,10 +5,10 @@
 function runChat() {
 console.log("hey");
 
-let name = document.getElementsByClassName("user-name").value;
+let name = document.getElementById("user-name").value;
 
 
-document.getElementsByClassName("text-area").innerHTML = name;
+document.getElementById("text-area").innerHTML = `<p>Hey ${name} how are you doing today?</p>`;
 console.log(name);
 
 }
