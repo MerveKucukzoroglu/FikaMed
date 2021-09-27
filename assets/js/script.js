@@ -21,12 +21,19 @@ function runChat() {
   
   console.log(name);
 
+  let twoButtons = document.getElementById("buttons-area");
+  twoButtons.innerHTML.remove;
+  twoButtons.innerHTML = 
+  `<button id="awesome-button" onclick="awesome();">Awesome</button>
+  <button id="terrible-button" onclick="terrible();">Terrible</button>
+  `
+
 }
 /**The initial of chat
  * user enter their name
  */
 function displayChat() {
-  console.log("heyw");
+
 }
 
 

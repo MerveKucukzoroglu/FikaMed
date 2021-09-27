@@ -17,20 +17,23 @@ body {
 }
 
 /*submit button and input name area */
-#submit-button, #user-name {
+#submit-button, #awesome-button, #terrible-button, #user-name {
     background-color: white;
     color: #783F2E;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     border-color: #783F2E;
+    border-radius: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-#submit-button:hover {
+#submit-button:hover, #awesome-button:hover, #terrible-button:hover {
     background-color: #783F2E;
     color: white;
-    padding: 5px;
+    padding: 10px;
     font-family: 'Montserrat Alternates', sans-serif;
+    border-color: white;
+    border-radius: 20px;
 }
 
 
