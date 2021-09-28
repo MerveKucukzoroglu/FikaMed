@@ -6,7 +6,7 @@
 body {
     background-color: white;
     font-family: 'Merienda', cursive;
-    color: #783F2E;
+    color: #0E4980;
     text-align: center;
 }
 
@@ -23,6 +23,12 @@ body {
     padding: 20px;
 }
 
+#intro, #feeling-today, #awesome-options, 
+#terrible-options, #feeling-angry, #feeling-sad, 
+#feeling-tired, #feeling-worthless, #complete, #feedback {
+    display: block;
+}
+
 #suggestion-box {
     width: 50%;
 }
@@ -31,19 +37,20 @@ body {
 #submit-button, #awesome-button, #terrible-button, #done, #user-name, #choose, 
 #angry, #sad, #tired, #worthless, #okay, #send-form, #suggestion-box {
     background-color: white;
-    color: #783F2E;
+    color: #7A2D43;
     padding: 10px;
-    margin: 10px;
-    border-color: #783F2E;
+    margin: 20px;
+    border-color: #7A2D43;
     border-radius: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
 #submit-button:hover, #awesome-button:hover, #terrible-button:hover, #done:hover, #choose:hover, 
 #angry:hover, #sad:hover, #tired:hover, #worthless:hover, #okay:hover, #send-form:hover {
-    background-color: #783F2E;
+    background-color: #7A2D43;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    margin: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
     border-color: white;
     border-radius: 20px;
@@ -51,7 +58,8 @@ body {
 
 /*feedback form style */
 #feedback {
-    border: solid 1px #783F2E;
+    color: #2C2C2C;
+    border: solid 1px #2C2C2C;
     border-radius: 20px;
     margin-top: 20px;
 }
@@ -60,7 +68,7 @@ body {
 
 #notice {
     font-family: 'Montserrat Alternates', sans-serif;
-    color: #9F2851;
+    color: #2C2C2C;
     margin-top: 50px;
 }
 
