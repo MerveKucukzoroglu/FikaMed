@@ -14,14 +14,27 @@
    </header>
     
    <div id="box-area">
-       <div id = "text-area">
-           <p>Hey there, I am your digital friend. What is your name?</p>
-           <input type="text" id="user-name" placeholder="Enter your name" value="" required>
+       <div id = "intro">
+           <p class = "fikamed">Hey there, I am your digital friend. What is your name?</p>
+           <label for = "user-name"></label>
+           <form>
+               <input type="text" id="user-name" placeholder="Enter your name" required>
+               <button id="submit-button">Submit</button>
+           </form>
+       </div>
+       
+       <div id = "feeling-today">
+           <div>
+               <span class = "name-repeat">namerepeat</span>
+               <span class = "fikamed"> , how are you feeling today?</span>
+            </div>
+           <div>
+               <button id="awesome-button">Awesome</button>
+               <button id="terrible-button">Terrible</button>
+           </div>
        </div>
 
-       <div id = "buttons-area">
-           <button id="submit-button" onclick="runChat();">Submit</button>
-       </div>
+       
    </div>
 
    <div id = "notice">
