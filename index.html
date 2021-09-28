@@ -28,34 +28,140 @@
                <span class = "name-repeat">namerepeat</span>
                <span class = "fikamed-reply"> , how are you feeling today?</span>
             </div>
-            <div class = "button">
+            <div class = "buttons">
                <button id="awesome-button">Awesome</button>
                <button id="terrible-button">Terrible</button>
            </div>
        </div>
 
-       <div id = "awesome-reason">
-           <span class = "name-repeat">namerepeat</span>
-           <span class = "fikamed-reply">, what makes you feel like this?</span>
-           <div id = "radio-buttons">
-               <input type = "radio" id = "school-work" name="reason" value = "school or work">
-               <label for = "school-work">School/Work</label>
-               
-               <input type = "radio" id = "family-friends" name="reason" value = "family or friends">
-               <label for = "family-friends">School/Work</label>
-               
-               <input type = "radio" id = "nature-hobbies" name="reason" value = "nature or hobbies">
-               <label for = "nature-hobbies">School/Work</label>
-               
-               <input type = "radio" id = "fikamed" name="reason" value = "fikamed" checked>
-               <label for = "fikamed">FikaMed</label>
+       <div id = "awesome-options">
+           <div>
+                <span class = "name-repeat">namerepeat</span>
+                <span class = "fikamed-reply">, what makes you feel like this?</span>
+                
+                <div id = "radio-buttons">
+                    <input type = "radio" id = "school-work" name="reason" value = "school or work">
+                    <label for = "school-work">School/Work</label>
+                
+                    <input type = "radio" id = "family-friends" name="reason" value = "family or friends">
+                    <label for = "family-friends">School/Work</label>
+                
+                    <input type = "radio" id = "nature-hobbies" name="reason" value = "nature or hobbies">
+                    <label for = "nature-hobbies">School/Work</label>
+                
+                    <input type = "radio" id = "fikamed" name="reason" value = "fikamed" checked>
+                    <label for = "fikamed">FikaMed</label>
+                </div>
+
+                <div class = "buttons">
+                    <button id = "choose">Choose</button>
+                 </div>
            </div>
            
-           <div class = "button">
-               <button id = "choose">Choose</button>
+       </div>
+
+       <div id = "terrible-options">
+           <div>
+                <span class = "fikamed-reply">I know.. not everything goes as we expect them to be.. You got a friend here!</span>
+                <span class = "name-repeat">namerepeat</span>
+                <span class = "fikamed-reply">, which of the following do you feel?</span>
            </div>
+           
+           <div class = "buttons">
+                <button id = "angry">Angry</button>
+                <button id = "sad">Sad</button>
+                <button id = "tired">Tired</button>
+                <button id = "worthless">Worthless</button>
+            </div>
        </div>
        
+       <div id = "feeling-angry">
+           <div>
+                <span class = "fikamed-reply">
+                    I know, being angry is frustrating.
+                    Take a walk in the nature, listen to a calm music and then pour a cup of herbal tea. 
+                    Let me know how you feel later. 
+                </span>
+           </div>
+            <div class = "buttons">
+                <button id = "okay">Okay</button>
+            </div>
+       </div>
+
+       <div id = "feeling-sad">
+            <div>
+                <span class = "fikamed-reply">
+                There are ups and downs in life. 
+                The barriers on your way strengthens you more than you think. 
+                Now is new than past. 
+                Take a fresh air in the nature, listen to your favourite songs. 
+                Do things that makes you happy.
+                Let me know how you feel later.
+                </span>
+            </div>
+            <div class = "buttons">
+                <button id = "okay">Okay</button>
+            </div>
+        </div>
+
+        <div id = "feeling-tired">
+            <div>
+                <span class = "fikamed-reply">
+                    Time just runs away right? Having to do many things in such a limited time is a magic!
+                    Take a break, make a “me time”. Maybe read a book. A cup of tea helps me all the time! 
+                    Do one of your hobby activities, believe me it will recharge you!
+                    Let me know how you feel later. 
+                </span>
+            </div>
+            <div class = "buttons">
+                <button id = "okay">Okay</button>
+            </div>
+        </div>
+
+        <div id = "feeling-worthless">
+            <div>
+                <span class = "fikamed-reply">
+                    Every one is unique. You are more than what you think. 
+                    I know you are capable of doing what you want. It’s their fault not to see your worth. 
+                    Respect yourself, know your worth.
+                    Write your skills on the paper. Write those amazing works you have done. 
+                    Draw the future you want to have in your mind. Take one step at a time.
+                    Let me know how you feel later.
+                </span>
+            </div>
+            <div class = "buttons">
+                <button id = "okay">Okay</button>
+            </div>
+        </div>
+
+        <div id = "complete">
+            <div>
+                <span class = "fikamed-reply">Don’t give up</span>
+                <span class = "name-repeat">namerepeat.</span>
+                <span class = "fikamed-reply">The key to your smile is your inner peace. You got this. Give time to yourself.</span>
+            </div>
+        </div>
+        
+        <div id = "feedback">
+            <form>
+                <h2>Feedback Form</h2>
+                <p>Did you feel better after talking to FikaMed?</p>
+                
+                <input type="radio" id = "yes" name="quality" value = "yes" checked>
+                <label for = "yes">Yes</label>
+
+                <input type="radio" id = "no" name="quality" value = "no" >
+                <label for = "no">No</label>
+
+                <p>How can I improve as a friend?</p>
+                <textarea id = "suggestion-box" placeholder="suggestions... "></textarea>
+                
+                <div class = "buttons">
+                    <button id = "send-form-button">Send</button>
+                </div>
+            </form>
+        </div>
+
    </div>
 
    <div id = "notice">
