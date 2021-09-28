@@ -15,7 +15,7 @@
     
    <div id="box-area">
        <div id = "intro">
-           <p class = "fikamed">Hey there, I am your digital friend. What is your name?</p>
+           <p class = "fikamed-reply">Hey there, I am your digital friend. What is your name?</p>
            <label for = "user-name"></label>
            <form>
                <input type="text" id="user-name" placeholder="Enter your name" required>
@@ -26,14 +26,35 @@
        <div id = "feeling-today">
            <div>
                <span class = "name-repeat">namerepeat</span>
-               <span class = "fikamed"> , how are you feeling today?</span>
+               <span class = "fikamed-reply"> , how are you feeling today?</span>
             </div>
-           <div>
+            <div class = "button">
                <button id="awesome-button">Awesome</button>
                <button id="terrible-button">Terrible</button>
            </div>
        </div>
 
+       <div id = "awesome-reason">
+           <span class = "name-repeat">namerepeat</span>
+           <span class = "fikamed-reply">, what makes you feel like this?</span>
+           <div id = "radio-buttons">
+               <input type = "radio" id = "school-work" name="reason" value = "school or work">
+               <label for = "school-work">School/Work</label>
+               
+               <input type = "radio" id = "family-friends" name="reason" value = "family or friends">
+               <label for = "family-friends">School/Work</label>
+               
+               <input type = "radio" id = "nature-hobbies" name="reason" value = "nature or hobbies">
+               <label for = "nature-hobbies">School/Work</label>
+               
+               <input type = "radio" id = "fikamed" name="reason" value = "fikamed" checked>
+               <label for = "fikamed">FikaMed</label>
+           </div>
+           
+           <div class = "button">
+               <button id = "choose">Choose</button>
+           </div>
+       </div>
        
    </div>
 
