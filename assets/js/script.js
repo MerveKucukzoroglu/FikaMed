@@ -3,8 +3,28 @@
 document.getElementById("user-name").value = "";
 document.getElementById("user-name").focus();
 
-function initial() {
+
+// let feelingToday = document.getElementById("feeling-today");
+// let awesomeOptions = document.getElementById("awesome-options");
+// let terribleOptions = document.getElementById("terrible-options");
+// let feelingAngry = document.getElementById("feeling-angry");
+// let feelingSad = document.getElementById("feeling-sad");
+// let feelingTired = document.getElementById("feeling-tired");
+// let feelingWorthless = document.getElementById("feeling-worthless");
+// let complete = document.getElementById("feedback");
   
+// const vars = [intro, feelingToday, awesomeOptions, terribleOptions, 
+//   feelingAngry, feelingSad, feelingTired, feelingWorthless, complete]
+
+function initial() {
+  let intro = document.getElementById("intro");
+    if (intro.style.display === "block") {
+      intro.style.display = "none";
+    } else {
+      intro.style.display = "block";
+    }
+      
+
 }
 
   
@@ -15,7 +35,24 @@ function runChat() {
   
   console.log("Begin talking with user!");
   
- 
+  let intro = document.getElementById("intro");
+  let feelingToday = document.getElementById("feeling-today");
+  let awesomeOptions = document.getElementById("awesome-options");
+  let terribleOptions = document.getElementById("terrible-options");
+  let feelingAngry = document.getElementById("feeling-angry");
+  let feelingSad = document.getElementById("feeling-sad");
+  let feelingTired = document.getElementById("feeling-tired");
+  let feelingWorthless = document.getElementById("feeling-worthless");
+  let complete = document.getElementById("feedback");
+  
+    if (intro.style.display === "none") {
+      feelingToday.style.display = "block";
+    } else {
+      feelingToday.style.display = "none"; 
+      awesomeOptions.style.display = "none";
+      terribleOptions.style.display = "none";
+
+    }
   console.log("Changing funtion based on what the user clicks");
 }
 

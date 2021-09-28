@@ -26,7 +26,7 @@ body {
 #intro, #feeling-today, #awesome-options, 
 #terrible-options, #feeling-angry, #feeling-sad, 
 #feeling-tired, #feeling-worthless, #complete, #feedback {
-    display: block;
+    display: none;
 }
 
 #suggestion-box {
