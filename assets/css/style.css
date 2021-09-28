@@ -16,8 +16,20 @@ body {
     padding:10px
 }
 
+/* main box style */
+#box-area {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+#suggestion-box {
+    width: 50%;
+}
+
 /*submit button and input name area */
-#submit-button, #awesome-button, #terrible-button, #done, #user-name, #choose {
+#submit-button, #awesome-button, #terrible-button, #done, #user-name, #choose, 
+#angry, #sad, #tired, #worthless, #okay, #send-form, #suggestion-box {
     background-color: white;
     color: #783F2E;
     padding: 10px;
@@ -27,7 +39,8 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-#submit-button:hover, #awesome-button:hover, #terrible-button:hover, #done:hover, #choose:hover {
+#submit-button:hover, #awesome-button:hover, #terrible-button:hover, #done:hover, #choose:hover, 
+#angry:hover, #sad:hover, #tired:hover, #worthless:hover, #okay:hover, #send-form:hover {
     background-color: #783F2E;
     color: white;
     padding: 10px;
@@ -36,10 +49,36 @@ body {
     border-radius: 20px;
 }
 
+/*feedback form style */
+#feedback {
+    border: solid 1px #783F2E;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
 /*notice area */
 
 #notice {
     font-family: 'Montserrat Alternates', sans-serif;
     color: #9F2851;
     margin-top: 50px;
+}
+
+
+/* for medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+    #box-area {
+        width: 60%;
+        margin: auto;
+        padding: 20px;
+    }
+}
+
+/* for smaller screen sizes from 500px wide and down */
+@media screen and (max-width: 500px) {
+    #box-area {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+    }
 }
