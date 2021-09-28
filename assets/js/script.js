@@ -1,7 +1,6 @@
 //Wait for the DOM to finish loading before running
 //Prepare the focus and enter key function for the user
-document.getElementById("user-name").value = "";
-document.getElementById("user-name").focus();
+
 
 
 // let feelingToday = document.getElementById("feeling-today");
@@ -17,13 +16,28 @@ document.getElementById("user-name").focus();
 //   feelingAngry, feelingSad, feelingTired, feelingWorthless, complete]
 
 function initial() {
+  
   let intro = document.getElementById("intro");
     if (intro.style.display === "block") {
       intro.style.display = "none";
     } else {
       intro.style.display = "block";
     }
-      
+    
+    document.getElementById("user-name").value = "";
+    document.getElementById("user-name").focus();
+
+    document.getElementById("user-name").addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        
+        document.getElementById("submit-button").click();
+      }
+    });
+document.getElementById("submit-button").addEventListener("click", runChat);
+    
+    
+    
+    
 
 }
 
@@ -34,25 +48,12 @@ function initial() {
 function runChat() {
   
   console.log("Begin talking with user!");
-  
   let intro = document.getElementById("intro");
-  let feelingToday = document.getElementById("feeling-today");
-  let awesomeOptions = document.getElementById("awesome-options");
-  let terribleOptions = document.getElementById("terrible-options");
-  let feelingAngry = document.getElementById("feeling-angry");
-  let feelingSad = document.getElementById("feeling-sad");
-  let feelingTired = document.getElementById("feeling-tired");
-  let feelingWorthless = document.getElementById("feeling-worthless");
-  let complete = document.getElementById("feedback");
-  
-    if (intro.style.display === "none") {
-      feelingToday.style.display = "block";
-    } else {
-      feelingToday.style.display = "none"; 
-      awesomeOptions.style.display = "none";
-      terribleOptions.style.display = "none";
+  intro.style.display = "none";
 
-    }
+  let feelingToday = document.getElementById("feeling-today");
+  feelingToday.style.display = "block";
+    
   console.log("Changing funtion based on what the user clicks");
 }
 
