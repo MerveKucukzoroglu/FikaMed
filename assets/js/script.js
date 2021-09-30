@@ -45,11 +45,9 @@ function initial() {
 function runChat() {
   
   console.log("Begin talking with user!");
-  let intro = document.getElementById("intro");
-  intro.style.display = "none";
+  document.getElementById("intro").style.display = "none";
 
-  let feelingToday = document.getElementById("feeling-today");
-  feelingToday.style.display = "block";
+  document.getElementById("feeling-today").style.display = "block";
  
   var nameRepeat = document.getElementById("user-name").value;
   document.getElementsByClassName("name-repeat")[0].innerHTML = nameRepeat;
@@ -78,11 +76,9 @@ function awesome() {
   
   console.log("You clicked awesome button!");
   
-  let feelingToday = document.getElementById("feeling-today");
-  feelingToday.style.display = "none";
+  document.getElementById("feeling-today").style.display = "none";
 
-  let awesomeOptions = document.getElementById("awesome-options");
-  awesomeOptions.style.display = "block";
+  document.getElementById("awesome-options").style.display = "block";
 
   var nameRepeat = document.getElementById("user-name").value;
   document.getElementsByClassName("name-repeat")[1].innerHTML = nameRepeat;
@@ -91,6 +87,15 @@ function awesome() {
 function terrible() {
 
   console.log("You clicked terrible button!");
+  
+  document.getElementById("feeling-today").style.display = "none";
+
+  document.getElementById("awesome-options").style.display = "none";
+
+  document.getElementById("terrible-options").style.display = "block";
+
+  var nameRepeat = document.getElementById("user-name").value;
+  document.getElementsByClassName("name-repeat")[1].innerHTML = nameRepeat;
 
 }
 
