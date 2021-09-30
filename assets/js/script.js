@@ -29,12 +29,16 @@ function initial() {
 
     document.getElementById("user-name").addEventListener("keydown", function(event) {
       if (event.key === "Enter") {
-        
+        let nameValue = document.getElementById("user-name").value;
+        if (nameValue == "" || nameValue == null) {
+          alert("Please enter your name!");
+          return false;
+        }
         document.getElementById("submit-button").click();
       }
     });
-document.getElementById("submit-button").addEventListener("click", runChat);
     
+    document.getElementById("submit-button").addEventListener("click", runChat);
     
     
     
