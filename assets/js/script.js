@@ -67,6 +67,7 @@ function runChat() {
  */
 function displayChat() {
 
+ 
 }
 
 function checkSelectedButton() {
@@ -74,8 +75,17 @@ function checkSelectedButton() {
 }
 
 function awesome() {
+  
   console.log("You clicked awesome button!");
+  
+  let feelingToday = document.getElementById("feeling-today");
+  feelingToday.style.display = "none";
 
+  let awesomeOptions = document.getElementById("awesome-options");
+  awesomeOptions.style.display = "block";
+
+  var nameRepeat = document.getElementById("user-name").value;
+  document.getElementsByClassName("name-repeat")[1].innerHTML = nameRepeat;
 }
 
 function terrible() {
