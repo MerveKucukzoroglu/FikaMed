@@ -55,6 +55,11 @@ function runChat() {
   document.getElementsByClassName("name-repeat")[0].innerHTML = nameRepeat;
 
   console.log("Changing funtion based on what the user clicks");
+  
+  document.getElementById("awesome-button").addEventListener("click", awesome);
+
+  document.getElementById("terrible-button").addEventListener("click", terrible);
+  
 }
 
 /**The initial of chat
@@ -69,11 +74,13 @@ function checkSelectedButton() {
 }
 
 function awesome() {
-  
+  console.log("You clicked awesome button!");
 
 }
 
 function terrible() {
+
+  console.log("You clicked terrible button!");
 
 }
 
