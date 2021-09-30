@@ -82,6 +82,8 @@ function awesome() {
 
   var nameRepeat = document.getElementById("user-name").value;
   document.getElementsByClassName("name-repeat")[1].innerHTML = nameRepeat;
+
+  document.getElementById("choose").addEventListener("click", complete);
 }
 
 function terrible() {
@@ -97,6 +99,11 @@ function terrible() {
   var nameRepeat = document.getElementById("user-name").value;
   document.getElementsByClassName("name-repeat")[1].innerHTML = nameRepeat;
 
+  document.getElementById("angry").addEventListener("click", angry);
+  document.getElementById("sad").addEventListener("click", sad);
+  document.getElementById("tired").addEventListener("click", tired);
+  document.getElementById("worthless").addEventListener("click", worthless);
+
 }
 
 function reasons() {
@@ -104,19 +111,23 @@ function reasons() {
 }
 
 function angry() {
-
+  console.log("You feel angry");
 }
 
 function sad() {
-
+  console.log("You feel sad");
 }
 
 function tired() {
-
+  console.log("You feel tired");
 }
 
 function worthless() {
+  console.log("You feel worthless");
+}
 
+function complete() {
+  console.log("You are at complete stage!");
 }
 
 function feedback() {
