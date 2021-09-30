@@ -18,30 +18,23 @@
 function initial() {
   
   let intro = document.getElementById("intro");
-    if (intro.style.display === "block") {
-      intro.style.display = "none";
-    } else {
-      intro.style.display = "block";
-    }
+  intro.style.display = "block";
     
-    document.getElementById("user-name").value = "";
-    document.getElementById("user-name").focus();
+  document.getElementById("user-name").value = "";
+  document.getElementById("user-name").focus();
 
-    document.getElementById("user-name").addEventListener("keydown", function(event) {
-      if (event.key === "Enter") {
-        let nameValue = document.getElementById("user-name").value;
-        if (nameValue == "" || nameValue == null) {
-          alert("Please enter your name!");
-          return false;
-        }
-        document.getElementById("submit-button").click();
+  document.getElementById("user-name").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      let nameValue = document.getElementById("user-name").value;
+      if (nameValue == "" || nameValue == null) {
+        alert("Please enter your name!");
+        return false;
       }
-    });
+      document.getElementById("submit-button").click();
+    }
+  });
     
-    document.getElementById("submit-button").addEventListener("click", runChat);
-    
-    
-    
+  document.getElementById("submit-button").addEventListener("click", runChat);
 
 }
 
@@ -57,7 +50,10 @@ function runChat() {
 
   let feelingToday = document.getElementById("feeling-today");
   feelingToday.style.display = "block";
-    
+ 
+  var nameRepeat = document.getElementById("user-name").value;
+  document.getElementsByClassName("name-repeat")[0].innerHTML = nameRepeat;
+
   console.log("Changing funtion based on what the user clicks");
 }
 
