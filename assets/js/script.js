@@ -132,6 +132,13 @@ function sad() {
 
 function tired() {
   console.log("You feel tired");
+
+  document.getElementById("terrible-options").style.display = "none";
+  document.getElementById("feeling-sad").style.display = "none";
+  document.getElementById("feeling-tired").style.display = "block";
+  
+  document.getElementsByClassName("okay")[2].addEventListener("click", complete);
+
 }
 
 function worthless() {
