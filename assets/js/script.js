@@ -97,7 +97,7 @@ function terrible() {
   document.getElementById("terrible-options").style.display = "block";
 
   var nameRepeat = document.getElementById("user-name").value;
-  document.getElementsByClassName("name-repeat")[1].innerHTML = nameRepeat;
+  document.getElementsByClassName("name-repeat")[2].innerHTML = nameRepeat;
 
   document.getElementById("angry").addEventListener("click", angry);
   document.getElementById("sad").addEventListener("click", sad);
@@ -112,6 +112,11 @@ function reasons() {
 
 function angry() {
   console.log("You feel angry");
+
+  document.getElementById("terrible-options").style.display = "none";
+  document.getElementById("feeling-angry").style.display = "block";
+
+  document.getElementById("okay").addEventListener("click", complete);
 }
 
 function sad() {
