@@ -153,6 +153,17 @@ function worthless() {
 
 function complete() {
   console.log("You are at complete stage!");
+
+  document.getElementById("awesome-options").style.display = "none";
+  document.getElementById("feeling-angry").style.display = "none";
+  document.getElementById("feeling-sad").style.display = "none";
+  document.getElementById("feeling-tired").style.display = "none";
+  document.getElementById("feeling-worthless").style.display = "none";
+
+  document.getElementById("complete").style.display = "block";
+
+  var nameRepeat = document.getElementById("user-name").value;
+  document.getElementsByClassName("name-repeat")[3].innerHTML = nameRepeat;
 }
 
 function feedback() {
