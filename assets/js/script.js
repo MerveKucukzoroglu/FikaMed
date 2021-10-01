@@ -136,13 +136,19 @@ function tired() {
   document.getElementById("terrible-options").style.display = "none";
   document.getElementById("feeling-sad").style.display = "none";
   document.getElementById("feeling-tired").style.display = "block";
-  
+
   document.getElementsByClassName("okay")[2].addEventListener("click", complete);
 
 }
 
 function worthless() {
   console.log("You feel worthless");
+
+  document.getElementById("terrible-options").style.display = "none";
+  document.getElementById("feeling-tired").style.display = "none";
+  document.getElementById("feeling-worthless").style.display = "block";
+  
+  document.getElementsByClassName("okay")[3].addEventListener("click", complete);
 }
 
 function complete() {
