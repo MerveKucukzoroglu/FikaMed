@@ -1,19 +1,3 @@
-//Wait for the DOM to finish loading before running
-//Prepare the focus and enter key function for the user
-
-
-
-// let feelingToday = document.getElementById("feeling-today");
-// let awesomeOptions = document.getElementById("awesome-options");
-// let terribleOptions = document.getElementById("terrible-options");
-// let feelingAngry = document.getElementById("feeling-angry");
-// let feelingSad = document.getElementById("feeling-sad");
-// let feelingTired = document.getElementById("feeling-tired");
-// let feelingWorthless = document.getElementById("feeling-worthless");
-// let complete = document.getElementById("feedback");
-  
-// const vars = [intro, feelingToday, awesomeOptions, terribleOptions, 
-//   feelingAngry, feelingSad, feelingTired, feelingWorthless, complete]
 
 function initial() {
   
@@ -171,5 +155,8 @@ function complete() {
 
 function feedback() {
 console.log("Feedback");
+
+document.getElementById("complete").style.display = "none";
+document.getElementById("feedback").style.display = "block";
 }
 
