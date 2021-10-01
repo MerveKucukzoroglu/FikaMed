@@ -164,6 +164,9 @@ function complete() {
 
   var nameRepeat = document.getElementById("user-name").value;
   document.getElementsByClassName("name-repeat")[3].innerHTML = nameRepeat;
+  
+  document.getElementById("complete-button").addEventListener("click", feedback);
+  
 }
 
 function feedback() {

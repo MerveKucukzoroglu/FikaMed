@@ -35,7 +35,7 @@ body {
 
 /*submit button and input name area */
 #submit-button, #awesome-button, #terrible-button, #done, #user-name, #choose, 
-#angry, #sad, #tired, #worthless, .okay, #send-form, #suggestion-box {
+#angry, #sad, #tired, #worthless, .okay, #send-form, #suggestion-box, #complete-button {
     background-color: white;
     color: #7A2D43;
     padding: 10px;
@@ -46,7 +46,7 @@ body {
 }
 
 #submit-button:hover, #awesome-button:hover, #terrible-button:hover, #done:hover, #choose:hover, 
-#angry:hover, #sad:hover, #tired:hover, #worthless:hover, .okay:hover, #send-form:hover {
+#angry:hover, #sad:hover, #tired:hover, #worthless:hover, .okay:hover, #send-form:hover, #complete-button:hover {
     background-color: #7A2D43;
     color: white;
     padding: 20px;
