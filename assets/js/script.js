@@ -1,4 +1,4 @@
-
+/** The main function that runs first*/
 function initial() {
   
   let intro = document.getElementById("intro");
@@ -19,18 +19,17 @@ function initial() {
   });
     
   document.getElementById("submit-button").addEventListener("click", runChat);
-
+  
 }
 
-  
-/**The main chat loop, when the script is loaded
- * and after user's response
+/**The chat loop
+ * after user's name response
  */
 function runChat() {
   
   console.log("Begin talking with user!");
-  document.getElementById("intro").style.display = "none";
 
+  document.getElementById("intro").style.display = "none";
   document.getElementById("feeling-today").style.display = "block";
  
   var nameRepeat = document.getElementById("user-name").value;
@@ -39,29 +38,16 @@ function runChat() {
   console.log("Changing funtion based on what the user clicks");
   
   document.getElementById("awesome-button").addEventListener("click", awesome);
-
   document.getElementById("terrible-button").addEventListener("click", terrible);
   
 }
 
-/**The initial of chat
- * user enter their name
- */
-function displayChat() {
-
- 
-}
-
-function checkSelectedButton() {
-
-}
-
+/**Runs when user clicks 'Awesome' button */
 function awesome() {
   
   console.log("You clicked awesome button!");
   
   document.getElementById("feeling-today").style.display = "none";
-
   document.getElementById("awesome-options").style.display = "block";
 
   var nameRepeat = document.getElementById("user-name").value;
@@ -70,14 +56,13 @@ function awesome() {
   document.getElementById("choose").addEventListener("click", complete);
 }
 
+/**Runs when user clicks 'Terrible' button */
 function terrible() {
 
   console.log("You clicked terrible button!");
   
   document.getElementById("feeling-today").style.display = "none";
-
   document.getElementById("awesome-options").style.display = "none";
-
   document.getElementById("terrible-options").style.display = "block";
 
   var nameRepeat = document.getElementById("user-name").value;
@@ -90,20 +75,21 @@ function terrible() {
 
 }
 
-function reasons() {
-
-}
-
+/**Displays suggestions when user clicks 'angry' button */
 function angry() {
+  
   console.log("You feel angry");
 
   document.getElementById("terrible-options").style.display = "none";
   document.getElementById("feeling-angry").style.display = "block";
 
   document.getElementsByClassName("okay")[0].addEventListener("click", complete);
+
 }
 
+/**Displays suggestions when user clicks 'sad' button */
 function sad() {
+  
   console.log("You feel sad");
   
   document.getElementById("terrible-options").style.display = "none";
@@ -114,7 +100,9 @@ function sad() {
 
 }
 
+/**Displays suggestions when user clicks 'tired' button */
 function tired() {
+  
   console.log("You feel tired");
 
   document.getElementById("terrible-options").style.display = "none";
@@ -125,7 +113,9 @@ function tired() {
 
 }
 
+/**Displays suggestions when user clicks 'worthless' button */
 function worthless() {
+ 
   console.log("You feel worthless");
 
   document.getElementById("terrible-options").style.display = "none";
@@ -133,9 +123,14 @@ function worthless() {
   document.getElementById("feeling-worthless").style.display = "block";
   
   document.getElementsByClassName("okay")[3].addEventListener("click", complete);
+
 }
 
+/**Displays last message when user completes their session
+ * sends the user to feedback form after they are done with complete function
+ */
 function complete() {
+  
   console.log("You are at complete stage!");
 
   document.getElementById("awesome-options").style.display = "none";
@@ -153,10 +148,13 @@ function complete() {
   
 }
 
+/**displays feedback form once they complete all the other stages of their session */
 function feedback() {
-console.log("Feedback");
 
-document.getElementById("complete").style.display = "none";
-document.getElementById("feedback").style.display = "block";
+  console.log("Feedback");
+
+  document.getElementById("complete").style.display = "none";
+  document.getElementById("feedback").style.display = "block";
+  
 }
 
