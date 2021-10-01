@@ -116,11 +116,18 @@ function angry() {
   document.getElementById("terrible-options").style.display = "none";
   document.getElementById("feeling-angry").style.display = "block";
 
-  document.getElementById("okay").addEventListener("click", complete);
+  document.getElementsByClassName("okay")[0].addEventListener("click", complete);
 }
 
 function sad() {
   console.log("You feel sad");
+  
+  document.getElementById("terrible-options").style.display = "none";
+  document.getElementById("feeling-angry").style.display = "none";
+  document.getElementById("feeling-sad").style.display = "block";
+
+  document.getElementsByClassName("okay")[1].addEventListener("click", complete);
+
 }
 
 function tired() {
