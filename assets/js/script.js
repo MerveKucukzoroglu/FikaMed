@@ -6,6 +6,15 @@ function initial() {
     
   document.getElementById("user-name").value = "";
   document.getElementById("user-name").focus();
+  
+  document.getElementById("submit-button").addEventListener("mousedown", function() {
+    let nameValue = document.getElementById("user-name").value;
+    if (nameValue == "" || nameValue == null) {
+      alert("Please enter your name!");
+        return false;
+      }
+      document.getElementById("submit-button").addEventListener("click", runChat);
+  });
 
   document.getElementById("user-name").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
@@ -17,7 +26,6 @@ function initial() {
       document.getElementById("submit-button").click();
     }
   });
-    
   document.getElementById("submit-button").addEventListener("click", runChat);
   
 }
