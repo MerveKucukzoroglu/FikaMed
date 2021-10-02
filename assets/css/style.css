@@ -27,6 +27,7 @@ body {
 #terrible-options, #feeling-angry, #feeling-sad, 
 #feeling-tired, #feeling-worthless, #complete, #feedback {
     display: none;
+    line-height: 20px;
 }
 
 #suggestion-box {
@@ -54,6 +55,11 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
     border-color: white;
     border-radius: 20px;
+}
+
+/* name input */
+.name-repeat {
+    text-transform: capitalize;
 }
 
 /*feedback form style */
