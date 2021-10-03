@@ -27,7 +27,8 @@ body {
 #terrible-options, #feeling-angry, #feeling-sad, 
 #feeling-tired, #feeling-worthless, #complete, #feedback {
     display: none;
-    line-height: 20px;
+    line-height: 40px;
+    font-size: 18px;
 }
 
 #suggestion-box {
