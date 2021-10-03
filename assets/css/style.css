@@ -18,9 +18,11 @@ body {
 /* list style */
 .list {
     list-style: none;
+    font-size: 20px;
+    line-height: 40px;
     width:400px;
     margin:auto;
-    padding-right: 10px;
+    padding: 10px;
     background-color: rgba(191, 194, 217, 50%);
 }
 
@@ -44,9 +46,13 @@ body {
     width: 50%;
 }
 
+#timer {
+    font-size: 40px;
+}
+
 /*submit button and input name area */
 #submit-button, #awesome-button, #terrible-button, #done, #user-name, #choose, 
-#angry, #sad, #tired, #worthless, .okay, #send-form, #suggestion-box, #complete-button {
+#angry, #sad, #tired, #worthless, .okay, #send-form, #suggestion-box, #complete-button, #timer {
     background-color: white;
     color: #414770;
     padding: 10px;
@@ -57,7 +63,7 @@ body {
 }
 
 #submit-button:hover, #awesome-button:hover, #terrible-button:hover, #done:hover, #choose:hover, 
-#angry:hover, #sad:hover, #tired:hover, #worthless:hover, .okay:hover, #send-form:hover, #complete-button:hover {
+#angry:hover, #sad:hover, #tired:hover, #worthless:hover, .okay:hover, #send-form:hover, #complete-button:hover, #timer:hover {
     background-color: #414770;
     color: white;
     padding: 20px;

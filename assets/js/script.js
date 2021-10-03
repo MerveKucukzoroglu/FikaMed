@@ -91,6 +91,8 @@ function angry() {
   document.getElementById("terrible-options").style.display = "none";
   document.getElementById("feeling-angry").style.display = "block";
 
+  document.getElementById("timer").addEventListener("click", timeCounter);
+
   document.getElementsByClassName("okay")[0].addEventListener("click", complete);
 
 }
@@ -164,5 +166,31 @@ function feedback() {
   document.getElementById("complete").style.display = "none";
   document.getElementById("feedback").style.display = "block";
   
+}
+
+/**Timer function of 10 seconds
+ * 5 seconds Inhale
+ * 5 seconds Exhale
+ */
+function timeCounter() {
+  var timer = 10;
+  var x = setInterval(function(){
+    document.getElementById("inhale-exhale").innerHTML = "Inhale... " + timer;
+    timer--;
+
+    if(timer<5) {
+      clearInterval(x);
+      var y= setInterval(function() {
+        document.getElementById("inhale-exhale").innerHTML = "Exhale... " + timer;
+        timer--;
+
+        if(timer<0){
+          clearInterval(y);
+        }
+
+      }, 1000)
+    }
+  }, 1000);
+
 }
 
