@@ -15,7 +15,8 @@
     
    <div id="box-area">
        <div id = "intro">
-           <p class = "fikamed-reply">Hey there, I am your digital friend. What is your name?</p>
+           <p class = "fikamed-reply">Hey there, I am your digital friend.</p> 
+           <p>What is your name?</p>
            <input type="text" id="user-name" placeholder="Enter your name" required>
            <button id="submit-button">Submit</button> 
        </div>
@@ -23,7 +24,7 @@
        <div id = "feeling-today">
            <div>
                <span class = "name-repeat" aria-placeholder="name"></span>
-               <span class = "fikamed-reply"> , how are you feeling today?</span>
+               <span class = "fikamed-reply">, how are you feeling today?</span>
             </div>
             <div class = "buttons">
                <button id="awesome-button">Awesome</button>
@@ -34,20 +35,31 @@
        <div id = "awesome-options">
            <div>
                 <span class = "name-repeat">namerepeat</span>
-                <span class = "fikamed-reply">, what makes you feel like this?</span>
+                <span class = "fikamed-reply">, that's great! What makes you feel awesome?</span>
                 
-                <div id = "radio-buttons">
-                    <input type = "radio" id = "school-work" name="reason" value = "school or work">
-                    <label for = "school-work">School/Work</label>
-                
-                    <input type = "radio" id = "family-friends" name="reason" value = "family or friends">
-                    <label for = "family-friends">Family/Friends</label>
-                
-                    <input type = "radio" id = "nature-hobbies" name="reason" value = "nature or hobbies">
-                    <label for = "nature-hobbies">Nature/Hobbies</label>
-                
-                    <input type = "radio" id = "fikamed" name="reason" value = "fikamed" checked>
-                    <label for = "fikamed">FikaMed</label>
+                <div>
+                    <ul class = "list">
+                        <li>
+                            <input type = "radio" id = "school-work" name="reason" value = "school or work">
+                            <label for = "school-work"><i class="fas fa-graduation-cap"></i> <i class="fas fa-briefcase"> School/Work</i></label>
+                        </li>
+                        <li>
+                            <input type = "radio" id = "family-friends" name="reason" value = "family or friends">
+                            <label for = "family-friends"><i class="fas fa-user-friends"> Family/Friends</i></label>
+                        </li>
+                        <li>
+                            <input type = "radio" id = "nature-hobbies" name="reason" value = "nature or hobbies">
+                            <label for = "nature-hobbies"><i class="fas fa-leaf"> Nature/Hobbies</i></label>
+                        </li>
+                        <li>
+                            <input type = "radio" id = "health-myself" name="reason" value = "health-myself" checked>
+                            <label for = "health-myself"><i class="fas fa-heartbeat"> Health/Myself</i></label>
+                        </li>
+                        <li>
+                            <input type = "radio" id = "fikamed" name="reason" value = "fikamed" checked>
+                            <label for = "fikamed"><i class="fas fa-smile-beam"> FikaMed</i></label>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class = "buttons">
@@ -59,7 +71,10 @@
 
        <div id = "terrible-options">
            <div>
-                <span class = "fikamed-reply">I know.. not everything goes as we expect them to be.. You got a friend here!</span>
+                <span class = "fikamed-reply">
+                    <p>I know.. not everything goes as we expect them to be..</p>
+                    <p>But you got a friend here!</p>
+                </span>
                 <span class = "name-repeat">namerepeat</span>
                 <span class = "fikamed-reply">, which of the following do you feel?</span>
            </div>
@@ -74,12 +89,14 @@
        
        <div id = "feeling-angry">
            <div>
-                <span class = "fikamed-reply">
-                    I know, being angry is frustrating.
-                    Take a walk in the nature, listen to a calm music and then pour a cup of herbal tea. 
-                    Let me know how you feel later. 
-                </span>
-           </div>
+               <p class="fikamed-reply">I know, being angry is frustrating.</p>
+               <ul class = "list">
+                    <li>Take a walk in the nature <i class="fas fa-leaf"></i></li>
+                    <li>Listen to a calm music <i class="fas fa-music"></i></li>
+                    <li>And then pour a cup of herbal tea <i class="fas fa-coffee"></i></li>
+                </ul> 
+                <p>Let me know how you feel later!</p>
+            </div>
             <div class = "buttons">
                 <button class = "okay">Okay</button>
             </div>
@@ -88,12 +105,14 @@
        <div id = "feeling-sad">
             <div>
                 <span class = "fikamed-reply">
-                There are ups and downs in life. 
-                The barriers on your way strengthens you more than you think. 
-                Now is new than past. 
-                Take a fresh air in the nature, listen to your favourite songs. 
-                Do things that makes you happy.
-                Let me know how you feel later.
+                    <p>There are ups and downs in life. Now is new than past.</p>
+                    <p>The barriers on your way strengthens you more than you think.</p> 
+                    <ul class = "list">
+                        <li>Take a fresh air in the nature <i class="fas fa-leaf"></i></li>
+                        <li>Listen to your favourite songs <i class="fas fa-music"></i></li>
+                        <li>Do things that makes you happy <i class="far fa-smile"></i></li>
+                    </ul> 
+                    <p>Let me know how you feel later!</p>
                 </span>
             </div>
             <div class = "buttons">
@@ -104,10 +123,14 @@
         <div id = "feeling-tired">
             <div>
                 <span class = "fikamed-reply">
-                    Time just runs away right? Having to do many things in such a limited time is a magic!
-                    Take a break, make a “me time”. Maybe read a book. A cup of tea helps me all the time! 
-                    Do one of your hobby activities, believe me it will recharge you!
-                    Let me know how you feel later. 
+                    <p>Time just runs away right?</p>
+                    <p>Having to do many things in such a limited time is a magic! <i class="fas fa-magic"></i></p> 
+                    <ul class="list">
+                        <li>Take a break, make a “me time”. Maybe read a book <i class="fas fa-book-open"></i></li>
+                        <li>A cup of tea helps me all the time <i class="fas fa-coffee"></i></li>
+                        <li>Do one of your hobby activities, believe me it will recharge you!</li>
+                    </ul> 
+                    <p>Let me know how you feel later!</p>
                 </span>
             </div>
             <div class = "buttons">
@@ -118,12 +141,16 @@
         <div id = "feeling-worthless">
             <div>
                 <span class = "fikamed-reply">
-                    Every one is unique. You are more than what you think. 
-                    I know you are capable of doing what you want. It’s their fault not to see your worth. 
-                    Respect yourself, know your worth.
-                    Write your skills on the paper. Write those amazing works you have done. 
-                    Draw the future you want to have in your mind. Take one step at a time.
-                    Let me know how you feel later.
+                    <p>Every one is unique. You are more than what you think. </p>
+                    <p>I know you are capable of doing what you want.</p>
+                    <ul class="list">
+                        <li>Respect yourself, know your worth.</li>
+                        <li>Write your skills on the paper.</li>
+                        <li>Write those amazing works you have done. </li>
+                        <li>Draw the future you want to have in your mind.</li>
+                        <li>Take one step at a time.</li>
+                    </ul> 
+                    <p>Let me know how you feel later.</p>
                 </span>
             </div>
             <div class = "buttons">
@@ -133,9 +160,10 @@
 
         <div id = "complete">
             <div>
-                <span class = "fikamed-reply">Don’t give up</span>
-                <span class = "name-repeat">namerepeat.</span>
-                <span class = "fikamed-reply">The key to your smile is your inner peace. You got this. Give time to yourself.</span>
+                <span class = "fikamed-reply">Don’t give up </span>
+                <span class = "name-repeat"></span>
+                <p>The key to your smile is your inner peace.</p> 
+                <p>You got this. Give time to yourself.</p>
             </div>
             <div class = "buttons">
                 <button id = "complete-button">Complete</button>
@@ -169,5 +197,8 @@
    </div>
 
     <script src="assets/js/script.js"></script>
+    
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/e6e69ae431.js" crossorigin="anonymous"></script>
 </body>
 </html>
