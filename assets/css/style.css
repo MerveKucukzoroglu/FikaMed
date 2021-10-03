@@ -13,11 +13,11 @@ body {
 /* Logo */
 
 #logo {
-    padding:10px
+    padding:10px;
 }
 
 /* main box style */
-#box-area {
+#box-area, #heading {
     width: 50%;
     margin: auto;
     padding: 20px;
