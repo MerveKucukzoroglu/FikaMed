@@ -173,14 +173,14 @@ function feedback() {
  * 5 seconds Exhale
  */
 function timeCounter() {
-  var timer = 0;
-  var x = setInterval(function(){
+  const timer = 0;
+  const x = setInterval(function(){
     document.getElementById("inhale-exhale").innerHTML = "Inhale... " + timer;
     timer++;
 
     if(timer>5) {
       clearInterval(x);
-      var y= setInterval(function() {
+      const y= setInterval(function() {
         document.getElementById("inhale-exhale").innerHTML = "Exhale... " + timer;
         timer++;
 

@@ -66,7 +66,7 @@ body {
 #angry:hover, #sad:hover, #tired:hover, #worthless:hover, .okay:hover, #send-form:hover, #complete-button:hover, #timer:hover {
     background-color: #414770;
     color: white;
-    padding: 20px;
+    padding: 10px;
     margin: 20px;
     font-family: 'Montserrat', sans-serif;
     border-color: white;
