@@ -168,29 +168,17 @@ function feedback() {
   
 }
 
-/**Timer function of 10 seconds
- * 5 seconds Inhale
- * 5 seconds Exhale
- */
+/**Timer 60 seconds */
 function timeCounter() {
-  const timer = 0;
-  const x = setInterval(function(){
-    document.getElementById("inhale-exhale").innerHTML = "Inhale... " + timer;
-    timer++;
+  var timer = 60;
+  var x = setInterval(function(){
+    document.getElementById("inhale-exhale").innerHTML =  timer;
+    timer--;
 
-    if(timer>5) {
+    if(timer<0) {
       clearInterval(x);
-      const y= setInterval(function() {
-        document.getElementById("inhale-exhale").innerHTML = "Exhale... " + timer;
-        timer++;
-
-        if(timer>10){
-          clearInterval(y);
-        }
-
-      }, 1000)
+      document.getElementById("inhale-exhale").innerHTML = "Click the button again to repeat the exercise";
     }
   }, 1000);
 
 }
-
