@@ -1,9 +1,6 @@
 /** The main function that runs first*/
 function initial() {
   
-  let intro = document.getElementById("intro");
-  intro.style.display = "block";
-    
   document.getElementById("user-name").value = "";
   document.getElementById("user-name").focus();
   
@@ -12,8 +9,11 @@ function initial() {
     if (nameValue == "" || nameValue == null) {
       alert("Please enter your name!");
         return false;
+      } else if (nameValue.trim() !== "") {
+        document.getElementById("submit-button").addEventListener("click", runChat);
+      } else {
+        alert("uh, oh.. please enter a real name");
       }
-      document.getElementById("submit-button").addEventListener("click", runChat);
   });
 
   document.getElementById("user-name").addEventListener("keydown", function(event) {
@@ -22,8 +22,12 @@ function initial() {
       if (nameValue == "" || nameValue == null) {
         alert("Please enter your name!");
         return false;
+      } else if (nameValue.trim() !== "") {
+        document.getElementById("submit-button").click();
+      } else {
+        alert("uh, oh.. please enter a real name");
       }
-      document.getElementById("submit-button").click();
+      
     }
   });
   document.getElementById("submit-button").addEventListener("click", runChat);

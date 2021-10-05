@@ -33,7 +33,8 @@ body {
     padding: 20px;
 }
 
-#intro, #feeling-today, #awesome-options, 
+
+#feeling-today, #awesome-options, 
 #terrible-options, #feeling-angry, #feeling-sad, 
 #feeling-tired, #feeling-worthless, #complete, #feedback {
     display: none;
