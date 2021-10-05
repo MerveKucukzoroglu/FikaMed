@@ -1,6 +1,8 @@
 /** The main function that runs first*/
 function initial() {
   
+  controlDisplay([], ["intro"]);
+
   document.getElementById("user-name").value = "";
   document.getElementById("user-name").focus();
   
@@ -39,11 +41,8 @@ function initial() {
  */
 function runChat() {
   
-  console.log("Begin talking with user!");
+  controlDisplay(["intro"], ["feeling-today"]);
 
-  document.getElementById("intro").style.display = "none";
-  document.getElementById("feeling-today").style.display = "block";
- 
   var nameRepeat = document.getElementById("user-name").value;
   document.getElementsByClassName("name-repeat")[0].innerHTML = nameRepeat;
 
@@ -57,10 +56,7 @@ function runChat() {
 /**Runs when user clicks 'Awesome' button */
 function awesome() {
   
-  console.log("You clicked awesome button!");
-  
-  document.getElementById("feeling-today").style.display = "none";
-  document.getElementById("awesome-options").style.display = "block";
+  controlDisplay([ "intro", "feeling-today"], ["awesome-options"]);
 
   var nameRepeat = document.getElementById("user-name").value;
   document.getElementsByClassName("name-repeat")[1].innerHTML = nameRepeat;
@@ -71,11 +67,7 @@ function awesome() {
 /**Runs when user clicks 'Terrible' button */
 function terrible() {
 
-  console.log("You clicked terrible button!");
-  
-  document.getElementById("feeling-today").style.display = "none";
-  document.getElementById("awesome-options").style.display = "none";
-  document.getElementById("terrible-options").style.display = "block";
+  controlDisplay(["intro", "feeling-today", "awesome-options"], ["terrible-options"]);
 
   var nameRepeat = document.getElementById("user-name").value;
   document.getElementsByClassName("name-repeat")[2].innerHTML = nameRepeat;
@@ -90,11 +82,8 @@ function terrible() {
 /**Displays suggestions when user clicks 'angry' button */
 function angry() {
   
-  console.log("You feel angry");
-
-  document.getElementById("terrible-options").style.display = "none";
-  document.getElementById("feeling-angry").style.display = "block";
-
+  controlDisplay(["intro", "terrible-options"], ["feeling-angry"]);
+  
   document.getElementById("timer").addEventListener("click", timeCounter);
 
   document.getElementsByClassName("okay")[0].addEventListener("click", complete);
@@ -104,11 +93,7 @@ function angry() {
 /**Displays suggestions when user clicks 'sad' button */
 function sad() {
   
-  console.log("You feel sad");
-  
-  document.getElementById("terrible-options").style.display = "none";
-  document.getElementById("feeling-angry").style.display = "none";
-  document.getElementById("feeling-sad").style.display = "block";
+  controlDisplay(["intro", "terrible-options", "feeling-angry"], ["feeling-sad"]);
 
   document.getElementsByClassName("okay")[1].addEventListener("click", complete);
 
@@ -117,11 +102,7 @@ function sad() {
 /**Displays suggestions when user clicks 'tired' button */
 function tired() {
   
-  console.log("You feel tired");
-
-  document.getElementById("terrible-options").style.display = "none";
-  document.getElementById("feeling-sad").style.display = "none";
-  document.getElementById("feeling-tired").style.display = "block";
+  controlDisplay(["intro", "terrible-options", "feeling-sad"], ["feeling-tired"]);
 
   document.getElementsByClassName("okay")[2].addEventListener("click", complete);
 
@@ -130,11 +111,7 @@ function tired() {
 /**Displays suggestions when user clicks 'worthless' button */
 function worthless() {
  
-  console.log("You feel worthless");
-
-  document.getElementById("terrible-options").style.display = "none";
-  document.getElementById("feeling-tired").style.display = "none";
-  document.getElementById("feeling-worthless").style.display = "block";
+  controlDisplay(["intro", "terrible-options", "feeling-tired"], ["feeling-worthless"]);
   
   document.getElementsByClassName("okay")[3].addEventListener("click", complete);
 
@@ -145,15 +122,7 @@ function worthless() {
  */
 function complete() {
   
-  console.log("You are at complete stage!");
-
-  document.getElementById("awesome-options").style.display = "none";
-  document.getElementById("feeling-angry").style.display = "none";
-  document.getElementById("feeling-sad").style.display = "none";
-  document.getElementById("feeling-tired").style.display = "none";
-  document.getElementById("feeling-worthless").style.display = "none";
-
-  document.getElementById("complete").style.display = "block";
+  controlDisplay(["intro", "awesome-options","feeling-angry", "feeling-sad", "feeling-tired", "feeling-worthless"], ["complete"]);
 
   var nameRepeat = document.getElementById("user-name").value;
   document.getElementsByClassName("name-repeat")[3].innerHTML = nameRepeat;
@@ -165,11 +134,8 @@ function complete() {
 /**displays feedback form once they complete all the other stages of their session */
 function feedback() {
 
-  console.log("Feedback");
+  controlDisplay(["intro", "complete"], ["feedback"]);
 
-  document.getElementById("complete").style.display = "none";
-  document.getElementById("feedback").style.display = "block";
-  
 }
 
 /**Timer 60 seconds */
@@ -185,4 +151,30 @@ function timeCounter() {
     }
   }, 1000);
 
+}
+
+
+/**Control display of elements */
+function controlDisplay(hiddenEl, shownEl) {
+  hideElement("intro", "feeling-today", "awesome-options", "terrible-options", "feeling-angry", 
+  "feeling-sad", "feeling-tired", "feeling-worthless",  "complete", "feedback")
+
+  showElement("intro", "feeling-today", "awesome-options", "terrible-options", "feeling-angry", 
+  "feeling-sad", "feeling-tired", "feeling-worthless",  "complete", "feedback")
+
+  hiddenEl.map((el) => {
+    hideElement(el);
+  })
+
+  shownEl.map((el) => {
+    showElement(el);
+  })
+}
+
+function hideElement(el) {
+document.getElementById(el).style.display = "none";
+}
+
+function showElement(el) {
+  document.getElementById(el).style.display = "block";
 }

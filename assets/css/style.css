@@ -36,7 +36,7 @@ body {
 
 #feeling-today, #awesome-options, 
 #terrible-options, #feeling-angry, #feeling-sad, 
-#feeling-tired, #feeling-worthless, #complete, #feedback {
+#feeling-tired, #feeling-worthless, #complete, #feedback, #intro {
     display: none;
     width: 100%;
     line-height: 30px;
