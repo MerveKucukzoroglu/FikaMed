@@ -1,7 +1,7 @@
 /* Google-Font */
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@300&family=Montserrat&display=swap');
-/* Global Style */
 
+/* Global Style */
 body {
     background-color: white;
     font-family: 'Laila', sans-serif;
@@ -10,7 +10,6 @@ body {
 }
 
 /* Logo */
-
 #logo {
     padding:10px;
 }
@@ -32,7 +31,6 @@ body {
     width: 50%;
     padding: 20px;
 }
-
 
 #feeling-today, #awesome-options, 
 #terrible-options, #feeling-angry, #feeling-sad, 
@@ -104,13 +102,11 @@ body {
 }
 
 /*notice area */
-
 #notice {
     font-family: 'Montserrat', sans-serif;
     color: #2C2C2C;
     margin-top: 50px;
 }
-
 
 /* for medium screen sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
