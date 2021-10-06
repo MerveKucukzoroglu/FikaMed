@@ -32,6 +32,7 @@ body {
     padding: 20px;
 }
 
+/*Divs style*/
 #feeling-today, #awesome-options, 
 #terrible-options, #feeling-angry, #feeling-sad, 
 #feeling-tired, #feeling-worthless, #complete, #feedback, #intro {
@@ -41,10 +42,7 @@ body {
     font-size: 18px;
 }
 
-#suggestion-box {
-    width: 50%;
-}
-
+/*Timer button style*/
 #timer {
     font-size: 50px;
     color: #414770;
@@ -55,17 +53,17 @@ body {
 }
 
 #timer:hover {
-    color: white;
-    background-color: #414770;
-    border-radius: 50%;
-    border-color: white;
+    color:  rgba(191, 194, 217, 70%);
+    border: none;
+    background-color: white;
 }
+
 #inhale-exhale {
     margin-bottom: 20px;
     font-size: 25px;
 }
 
-/*submit button and input name area */
+/*submit buttons style*/
 #submit-button, #awesome-button, #terrible-button, #done, #user-name, #choose, 
 #angry, #sad, #tired, #worthless, .okay, #send-form, #suggestion-box, #complete-button{
     background-color: white;
@@ -99,6 +97,10 @@ body {
     border: solid 1px #2C2C2C;
     border-radius: 20px;
     margin-top: 20px;
+}
+
+#suggestion-box {
+    width: 50%;
 }
 
 /*notice area */

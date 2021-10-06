@@ -164,7 +164,6 @@ function timeCounter() {
 
 }
 
-
 /**Control display of elements */
 function controlDisplay(hiddenEl, shownEl) {
   hideElement("intro", "feeling-today", "awesome-options", "terrible-options", "feeling-angry", 
