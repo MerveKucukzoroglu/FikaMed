@@ -32,8 +32,24 @@ function initial() {
       
     }
   });
+  
   document.getElementById("submit-button").addEventListener("click", runChat);
   
+}
+
+/**Define username value entered, 
+ * and display the value when called*/
+function userName(repeat) {
+  repeatUserName("name1", "name2", "name3", "name4")
+
+  repeat.map((el) => {
+    repeatUserName(el);
+  })
+}
+
+function repeatUserName(el){
+  var repeat = document.getElementById("user-name").value;
+  document.getElementById(el).innerHTML = repeat; 
 }
 
 /**The chat loop
@@ -58,6 +74,7 @@ function awesome() {
   userName(["name2"]);
 
   document.getElementById("choose").addEventListener("click", complete);
+  
 }
 
 /**Runs when user clicks 'Terrible' button */
@@ -173,17 +190,5 @@ function showElement(el) {
   document.getElementById(el).style.display = "block";
 }
 
-function userName(repeat) {
-  repeatUserName("name1", "name2", "name3", "name4")
 
-  repeat.map((el) => {
-    repeatUserName(el);
-  })
-}
-
-function repeatUserName(el){
-  var repeat = document.getElementById("user-name").value;
-  document.getElementById(el).innerHTML = repeat;
-  
-}
 

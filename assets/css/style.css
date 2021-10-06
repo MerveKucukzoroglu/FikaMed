@@ -91,7 +91,7 @@ body {
 }
 
 /* name input */
-.name-repeat {
+#name1, #name2, #name3, #name4 {
     text-transform: capitalize;
 }
 
