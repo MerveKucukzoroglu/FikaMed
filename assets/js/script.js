@@ -14,7 +14,7 @@ function initial() {
       } else if (nameValue.trim() !== "") {
         document.getElementById("submit-button").addEventListener("click", runChat);
       } else {
-        alert("uh, oh.. please enter a real name");
+        alert("Lets be friends, please enter your name.");
       }
   });
 
@@ -27,7 +27,7 @@ function initial() {
       } else if (nameValue.trim() !== "") {
         document.getElementById("submit-button").click();
       } else {
-        alert("uh, oh.. please enter a real name");
+        alert("Lets be friends, please enter your name.");
       }
       
     }
@@ -43,10 +43,7 @@ function runChat() {
   
   controlDisplay(["intro"], ["feeling-today"]);
 
-  var nameRepeat = document.getElementById("user-name").value;
-  document.getElementsByClassName("name-repeat")[0].innerHTML = nameRepeat;
-
-  console.log("Changing funtion based on what the user clicks");
+  userName(["name1"]);
   
   document.getElementById("awesome-button").addEventListener("click", awesome);
   document.getElementById("terrible-button").addEventListener("click", terrible);
@@ -58,8 +55,7 @@ function awesome() {
   
   controlDisplay([ "intro", "feeling-today"], ["awesome-options"]);
 
-  var nameRepeat = document.getElementById("user-name").value;
-  document.getElementsByClassName("name-repeat")[1].innerHTML = nameRepeat;
+  userName(["name2"]);
 
   document.getElementById("choose").addEventListener("click", complete);
 }
@@ -69,8 +65,7 @@ function terrible() {
 
   controlDisplay(["intro", "feeling-today", "awesome-options"], ["terrible-options"]);
 
-  var nameRepeat = document.getElementById("user-name").value;
-  document.getElementsByClassName("name-repeat")[2].innerHTML = nameRepeat;
+  userName(["name3"]);
 
   document.getElementById("angry").addEventListener("click", angry);
   document.getElementById("sad").addEventListener("click", sad);
@@ -124,8 +119,7 @@ function complete() {
   
   controlDisplay(["intro", "awesome-options","feeling-angry", "feeling-sad", "feeling-tired", "feeling-worthless"], ["complete"]);
 
-  var nameRepeat = document.getElementById("user-name").value;
-  document.getElementsByClassName("name-repeat")[3].innerHTML = nameRepeat;
+  userName(["name4"]);
   
   document.getElementById("complete-button").addEventListener("click", feedback);
   
@@ -178,3 +172,18 @@ document.getElementById(el).style.display = "none";
 function showElement(el) {
   document.getElementById(el).style.display = "block";
 }
+
+function userName(repeat) {
+  repeatUserName("name1", "name2", "name3", "name4")
+
+  repeat.map((el) => {
+    repeatUserName(el);
+  })
+}
+
+function repeatUserName(el){
+  var repeat = document.getElementById("user-name").value;
+  document.getElementById(el).innerHTML = repeat;
+  
+}
+
