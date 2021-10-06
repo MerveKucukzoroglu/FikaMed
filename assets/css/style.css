@@ -45,7 +45,7 @@ body {
 /*Timer button style*/
 #timer {
     font-size: 50px;
-    color: #414770;
+    color: #6E75A8;
     padding: 10px;
     margin: 20px;
     border: none;
@@ -53,9 +53,8 @@ body {
 }
 
 #timer:hover {
-    color:  rgba(191, 194, 217, 70%);
+    color: #3C3C3C;
     border: none;
-    background-color: white;
 }
 
 #inhale-exhale {
