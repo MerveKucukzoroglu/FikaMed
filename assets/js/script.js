@@ -74,7 +74,7 @@ function awesome() {
   userName(["name2"]);
 
   document.getElementById("choose").addEventListener("click", complete);
-  
+
 }
 
 /**Runs when user clicks 'Terrible' button */
@@ -189,6 +189,3 @@ document.getElementById(el).style.display = "none";
 function showElement(el) {
   document.getElementById(el).style.display = "block";
 }
-
-
-
