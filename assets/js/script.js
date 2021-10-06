@@ -40,11 +40,11 @@ function initial() {
 /**Define username value entered, 
  * and display the value when called*/
 function userName(repeat) {
-  repeatUserName("name1", "name2", "name3", "name4")
+  repeatUserName("name1", "name2", "name3", "name4");
 
   repeat.map((el) => {
     repeatUserName(el);
-  })
+  });
 }
 
 function repeatUserName(el){
@@ -168,18 +168,18 @@ function timeCounter() {
 /**Control display of elements */
 function controlDisplay(hiddenEl, shownEl) {
   hideElement("intro", "feeling-today", "awesome-options", "terrible-options", "feeling-angry", 
-  "feeling-sad", "feeling-tired", "feeling-worthless",  "complete", "feedback")
+  "feeling-sad", "feeling-tired", "feeling-worthless",  "complete", "feedback");
 
   showElement("intro", "feeling-today", "awesome-options", "terrible-options", "feeling-angry", 
-  "feeling-sad", "feeling-tired", "feeling-worthless",  "complete", "feedback")
+  "feeling-sad", "feeling-tired", "feeling-worthless",  "complete", "feedback");
 
   hiddenEl.map((el) => {
     hideElement(el);
-  })
+  });
 
   shownEl.map((el) => {
     showElement(el);
-  })
+  });
 }
 
 function hideElement(el) {
