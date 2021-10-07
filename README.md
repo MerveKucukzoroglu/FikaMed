@@ -109,3 +109,38 @@ This platform wishes to be an immediate support to deal with one's emotions. How
     * It notifies the user to know that FikaMed is just a digital friend, and that they must consult a professional doctor if they need medical support.  
 
         ![Notice](assets/images/notice.png)
+        
+## Features Left to Implement
+* In the future, FikaMed can be implemented to hospitals and health services online platform. After it is implemented to the professional medical platforms, an option for booking an appointment will be available. The options user choose about how they feel will give an idea to the doctor.
+* The timer can be upgraded to a page with a meditation options. It will have various relaxing nature sounds and music. 
+
+# Testing 
+* I tested this site in different browsers: Chrome and Safari.
+* I confirm that the options chosen by user responds and behaves respectively.
+* I tested the colours by [Contrast grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=ffffff%20%20(backGround)%0D%0A%0D%0A6E75A8%20(logo)%0D%0A%0D%0A3C3C3C%20(text)%0D%0A%0D%0A2C2C2C%20(notice%20and%20form%20text)%0D%0A%0D%0A414770%20(buttons)%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp).
+
+    ![Colours](assets/images/colours.png)
+
+## Validator Testing
+* HTML : No errors were found when testing through the official _W3C Validator_.
+* CSS : No errors were found when testing through the official _W3C CSS Validator_.
+* JSHint : Some warnings were found when testing through the official _JSHint_. They were resolved by adding the missing semicolons.
+* The site is tested by Lighthouse. 
+    ![Lighthouse](assets/images/lighthouse.png)
+
+## Unfixed Bugs
+No unfixed bugs
+
+# Deployment
+* The site was deployed to Github pages. The steps for deployment are as follows:
+    * In Github repository, navigate to the Settings tab
+    * Find the 'pages section' in the settings page
+    * From the source section drop-down menu, select the Main Branch
+    * Click save and the page will be refreshed automatically and the site is deployed.
+    * My site was successfully deployed.
+    * [Click here](https://mervekucukzoroglu.github.io/FikaMed/) to visit my deployed site.
+
+# Credits 
+* The fonts are taken from [Google Fonts](https://fonts.google.com/).
+* The icons are from [Font Awesome](https://fontawesome.com/).
+* The method to remove code repetition for hide/show elements and to use "hiddenEl.map((el) => {hideElement(el);})" is suggested by my Code Institute mentor, Antonija Simic. 
